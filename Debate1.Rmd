@@ -1,0 +1,52 @@
+---
+title: "Debate 1"
+author: "Rodrigo Martínez"
+date: "8/3/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+1. Empezad revisando vuestra instalación básica. Comprobad que tenéis las
+últimas versiones de R, Rstudio y Rmarkdown.
+
+  version.string R version 4.1.2 (2021-11-01)
+  RStudio 2021.09.1
+
+2. A continuación, pasaremos a instalar y usar Bioconductor
+  1. Acceded a la web de Bioconductor. Buscad como hacer una instalación
+  básica e instaladlo en vuestro equipo. Para familiarizaros con Bioconductor
+  podéis hacerlo paseando por su web.
+
+
+
+Ejercicio 1:
+Lea la viñeta de ExpressionSet del paquete Biobase y practique con ExpressionSets.
+```{r, include=TRUE}
+library(Biobase)
+openVignette()  #Seleccionamos 1: Biobase - An introduction to Biobase and ExpressionSets
+```
+Cree un ExpressionSet desde cero usando, por ejemplo, información de un
+estudio descargado de GEO.
+```{r, include=TRUE}
+if (!require("BiocManager")) 
+  + install.packages("BiocManager")
+BiocManager::install("Biobase")
+
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
